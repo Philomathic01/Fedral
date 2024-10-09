@@ -111,7 +111,7 @@ if submit_button:
                 st.markdown(f"**Publication Date:** {document.get('publication_date', 'N/A')}")
                 st.markdown(f"**abstract:** {document.get('abstract', 'N/A')}")
                 st.markdown(f"**Details URL:** [Link]({document.get('html_url', 'N/A')})")
-                st.markdown(f"** PDF URL:** [Link]({document.get('pdf_url','N/A')})")
+                st.markdown(f"**PDF URL:** [Link]({document.get('pdf_url','N/A')})")
                 st.markdown("</div>", unsafe_allow_html=True)
         else:
             st.warning("No 'results' key found in the response.")
